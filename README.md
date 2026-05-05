@@ -27,12 +27,12 @@
 ## 🚀 Як запустити
 
 1. Клонуй репозиторій:
-   ```bash
+```bash
 git clone https://github.com/rebte/medbook_front.git
 cd medbook
 ```
 2. Відкрий `index.html` у браузері або запусти локальний сервер:
-   ```bash
+```bash
 python -m http.server 8000
 ```
 3. Перейдіть на `http://localhost:8000`
