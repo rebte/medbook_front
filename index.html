@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>МедБук — Онлайн запис до лікарів</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#" class="logo">
+        <span class="logo__cross">✚</span>
+        <span class="logo__text">МедБук</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#doctors" class="nav__link">Лікарі</a></li>
+          <li><a href="#specialties" class="nav__link">Спеціальності</a></li>
+          <li><a href="#how" class="nav__link">Як це працює</a></li>
+          <li><a href="#contacts" class="nav__link">Контакти</a></li>
+        </ul>
+      </nav>
+      <a href="#booking" class="btn btn--header">Записатись</a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Онлайн-резервація</p>
+      <h1 class="hero__title">Ваше здоров'я —<br/><em>наш пріоритет</em></h1>
+      <p class="hero__sub">Запишіться до кваліфікованого спеціаліста онлайн за 2 хвилини. Без черг, без дзвінків.</p>
+      <div class="hero__actions">
+        <a href="#booking" class="btn btn--primary">Обрати лікаря</a>
+        <a href="#how" class="btn btn--ghost">Як це працює</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><strong>120+</strong><span>Лікарів</span></div>
+        <div class="stat"><strong>18</strong><span>Спеціальностей</span></div>
+        <div class="stat"><strong>24/7</strong><span>Онлайн запис</span></div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__card-float">
+        <div class="float-card float-card--1">
+          <div class="float-card__icon">📅</div>
+          <div>
+            <p class="float-card__label">Найближчий прийом</p>
+            <p class="float-card__value">Сьогодні, 15:30</p>
+          </div>
+        </div>
+        <div class="float-card float-card--2">
+          <div class="float-card__icon">⭐</div>
+          <div>
+            <p class="float-card__label">Рейтинг клініки</p>
+            <p class="float-card__value">4.9 / 5.0</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero__blob"><img src="./assets/doktor.png" alt="1"></div>
+    </div>
+  </section>
+
+  <!-- SPECIALTIES -->
+  <section class="section specialties" id="specialties">
+    <div class="container">
+      <h2 class="section__title">Спеціальності</h2>
+      <p class="section__sub">Оберіть потрібного фахівця з нашого переліку</p>
+      <div class="specialties__grid">
+        <div class="spec-card">
+          <div class="spec-card__icon">🫀</div>
+          <h3>Кардіологія</h3>
+          <p>12 лікарів</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card__icon">🧠</div>
+          <h3>Неврологія</h3>
+          <p>8 лікарів</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card__icon">🦴</div>
+          <h3>Ортопедія</h3>
+          <p>10 лікарів</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card__icon">👁️</div>
+          <h3>Офтальмологія</h3>
+          <p>6 лікарів</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card__icon">🦷</div>
+          <h3>Стоматологія</h3>
+          <p>14 лікарів</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card__icon">🩺</div>
+          <h3>Терапія</h3>
+          <p>18 лікарів</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card__icon">👶</div>
+          <h3>Педіатрія</h3>
+          <p>9 лікарів</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card__icon">🔬</div>
+          <h3>Дерматологія</h3>
+          <p>7 лікарів</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTORS -->
+  <section class="section doctors" id="doctors">
+    <div class="container">
+      <h2 class="section__title">Наші лікарі</h2>
+      <p class="section__sub">Команда досвідчених спеціалістів готова вам допомогти</p>
+      <div class="doctors__grid" id="doctorsGrid">
+        <div class="doctor-card">
+          <div class="doctor-card__avatar" style="background:#e8f4f0;">👨‍⚕️</div>
+          <div class="doctor-card__info">
+            <h3 class="doctor-card__name">Іваненко Олексій Петрович</h3>
+            <p class="doctor-card__spec">Кардіолог</p>
+            <div class="doctor-card__rating">⭐ 4.9 <span>(142 відгуки)</span></div>
+            <p class="doctor-card__exp">Досвід: 15 років</p>
+            <a href="#booking" class="btn btn--card">Записатись</a>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-card__avatar" style="background:#f0e8f4;">👩‍⚕️</div>
+          <div class="doctor-card__info">
+            <h3 class="doctor-card__name">Коваль Марія Василівна</h3>
+            <p class="doctor-card__spec">Невролог</p>
+            <div class="doctor-card__rating">⭐ 4.8 <span>(98 відгуки)</span></div>
+            <p class="doctor-card__exp">Досвід: 12 років</p>
+            <a href="#booking" class="btn btn--card">Записатись</a>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-card__avatar" style="background:#f4f0e8;">🧑‍⚕️</div>
+          <div class="doctor-card__info">
+            <h3 class="doctor-card__name">Шевченко Дмитро Олегович</h3>
+            <p class="doctor-card__spec">Ортопед</p>
+            <div class="doctor-card__rating">⭐ 4.7 <span>(76 відгуки)</span></div>
+            <p class="doctor-card__exp">Досвід: 10 років</p>
+            <a href="#booking" class="btn btn--card">Записатись</a>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-card__avatar" style="background:#e8eef4;">👩‍⚕️</div>
+          <div class="doctor-card__info">
+            <h3 class="doctor-card__name">Бондаренко Олена Іванівна</h3>
+            <p class="doctor-card__spec">Офтальмолог</p>
+            <div class="doctor-card__rating">⭐ 5.0 <span>(201 відгуки)</span></div>
+            <p class="doctor-card__exp">Досвід: 20 років</p>
+            <a href="#booking" class="btn btn--card">Записатись</a>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-card__avatar" style="background:#f4e8e8;">👨‍⚕️</div>
+          <div class="doctor-card__info">
+            <h3 class="doctor-card__name">Мороз Андрій Сергійович</h3>
+            <p class="doctor-card__spec">Стоматолог</p>
+            <div class="doctor-card__rating">⭐ 4.8 <span>(115 відгуки)</span></div>
+            <p class="doctor-card__exp">Досвід: 8 років</p>
+            <a href="#booking" class="btn btn--card">Записатись</a>
+          </div>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-card__avatar" style="background:#e8f4e8;">👩‍⚕️</div>
+          <div class="doctor-card__info">
+            <h3 class="doctor-card__name">Лисенко Тетяна Михайлівна</h3>
+            <p class="doctor-card__spec">Терапевт</p>
+            <div class="doctor-card__rating">⭐ 4.9 <span>(189 відгуки)</span></div>
+            <p class="doctor-card__exp">Досвід: 18 років</p>
+            <a href="#booking" class="btn btn--card">Записатись</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section how" id="how">
+    <div class="container">
+      <h2 class="section__title">Як це працює</h2>
+      <div class="how__steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <h3 class="step__title">Оберіть спеціаліста</h3>
+          <p class="step__desc">Переглядайте профілі лікарів, їх кваліфікацію та відгуки пацієнтів</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <h3 class="step__title">Виберіть час</h3>
+          <p class="step__desc">Оберіть зручний для вас день і час із доступного розкладу лікаря</p>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <h3 class="step__title">Підтвердіть запис</h3>
+          <p class="step__desc">Заповніть коротку форму та отримайте підтвердження на email або SMS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="section booking" id="booking">
+    <div class="container">
+      <div class="booking__wrapper">
+        <div class="booking__info">
+          <h2 class="section__title">Записатись онлайн</h2>
+          <p class="section__sub">Заповніть форму і наш адміністратор зв'яжеться з вами для підтвердження</p>
+          <ul class="booking__benefits">
+            <li>✅ Безкоштовна реєстрація</li>
+            <li>✅ Підтвердження протягом 15 хвилин</li>
+            <li>✅ Нагадування за день до прийому</li>
+            <li>✅ Скасування без штрафів</li>
+          </ul>
+        </div>
+        <form class="booking__form" id="bookingForm">
+          <div class="form__group">
+            <label class="form__label">Ваше ім'я</label>
+            <input type="text" class="form__input" placeholder="Іван Іваненко" required />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Телефон</label>
+            <input type="tel" class="form__input" placeholder="+380 XX XXX XX XX" required />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Email</label>
+            <input type="email" class="form__input" placeholder="email@example.com" />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Спеціальність</label>
+            <select class="form__input form__select">
+              <option>Оберіть спеціальність</option>
+              <option>Кардіологія</option>
+              <option>Неврологія</option>
+              <option>Ортопедія</option>
+              <option>Офтальмологія</option>
+              <option>Стоматологія</option>
+              <option>Терапія</option>
+              <option>Педіатрія</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label">Бажана дата</label>
+            <input type="date" class="form__input" />
+          </div>
+          <div class="form__group">
+            <label class="form__label">Коментар</label>
+            <textarea class="form__input form__textarea" placeholder="Опишіть ваш запит..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Надіслати заявку</button>
+          <p class="form__note">Натискаючи кнопку, ви погоджуєтесь з умовами використання</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacts">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--light">
+          <span class="logo__cross">✚</span>
+          <span class="logo__text">МедБук</span>
+        </a>
+        <p class="footer__tagline">Ваш надійний партнер у сфері охорони здоров'я</p>
+      </div>
+      <div class="footer__links">
+        <h4>Навігація</h4>
+        <ul>
+          <li><a href="#doctors">Лікарі</a></li>
+          <li><a href="#specialties">Спеціальності</a></li>
+          <li><a href="#how">Як це працює</a></li>
+          <li><a href="#booking">Записатись</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Інформація</h4>
+        <ul>
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Політика конфіденційності</a></li>
+          <li><a href="#">Умови використання</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Контакти</h4>
+        <p>📍 м. Київ, вул. Хрещатик, 1</p>
+        <p>📞 +380 44 123 45 67</p>
+        <p>✉️ info@medbuk.ua</p>
+        <p>🕐 Пн–Пт: 8:00–20:00</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 МедБук. Всі права захищені. | ІМ-34 Кочерга Іван</p>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
