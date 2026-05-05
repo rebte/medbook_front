@@ -28,7 +28,7 @@
 
 1. Клонуй репозиторій:
    ```bash
-git clone https://github.com/yourusername/medbook.git
+git clone https://github.com/rebte/medbook_front.git
 cd medbook
 ```
 2. Відкрий `index.html` у браузері або запусти локальний сервер:
